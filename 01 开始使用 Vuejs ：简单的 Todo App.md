@@ -77,5 +77,26 @@
     </div>
 </div>
 
-
+<script src="js/vue.js"></script>
+<script>
+    new Vue({
+        el: '#app',
+        data: {
+            message: 'My Todos',
+            todos: [
+                {id: 1, title: 'Learn Vuejs'}
+            ],
+            newTodo: {id: null, title: ''}
+        },
+        methods: {
+            addTodo(newTodo){
+                this.todos.push(newTodo);
+                this.newTodo = {id: null, title: ''};
+            },
+            deleteTodo(index){
+                this.todos.splice(index, 1);
+            }
+        }
+    });
+</script>
 ```
