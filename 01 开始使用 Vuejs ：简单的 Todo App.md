@@ -49,5 +49,33 @@
     </div><!-- /.container-fluid -->
 </nav>
 
+<div class="container" id="app">
+    <div class="row">
+        <div class="col-md-8 col-md-offset-2">
+            <div class="panel panel-default">
+                <div class="panel-heading">Welcome Vue js 2.0 Tutorial</div>
+                <div class="panel-body">
+                    <h1>{{ message }}</h1>
+                    <ul class="list-group">
+                        <li class="list-group-item" v-for="(todo, index) in todos">
+                            {{ todo.title }}
+                            <button class="btn btn-warning btn-xs pull-right" v-on:click="deleteTodo(index)">Delete</button>
+                        </li>
+                    </ul>
+                    <form v-on:submit.prevent="addTodo(newTodo)">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Add a new todo"
+                                   v-model="newTodo.title">
+                        </div>
+                        <div class="form-group">
+                            <button class="btn btn-success" type="submit">Add Todo</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
 
 ```
