@@ -75,5 +75,11 @@ config/app.php
 ],
 ```
 
-
+app/Http/Kernel.php
+```
+protected $routeMiddleware = [
+    ...
+    'cors' => \Barryvdh\Cors\HandleCors::class,
+];
+```
 
