@@ -35,4 +35,6 @@ Route::get('/todos', function(){
 })->middleware('cors:api');
 ```
 
+![](image/screenshot_1496403289289.png)
+
 
