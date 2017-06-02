@@ -67,4 +67,7 @@ cd laravel-package/
 composer require barryvdh/laravel-cors
 
 config/app.php
+```
+
+```
 
