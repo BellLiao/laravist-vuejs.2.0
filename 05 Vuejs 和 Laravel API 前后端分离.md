@@ -2,5 +2,7 @@
 
 >https://github.com/imcvampire/vue-axios
 
+
+
 npm install --save axios vue-axios --registry https://registry.npm.taobao.org
 
