@@ -18,6 +18,18 @@ npm run dev
 index.html
 ```
 <link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+
+<nav class="navbar navbar-default navbar-static-top">
+    <div class="container-fluid">
+        <!-- Brand and toggle get grouped for better mobile display -->
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">Vue js 2.0</a>
+        </div>
+    </div><!-- /.container-fluid -->
+</nav>
+<div id="app"></div>
+<!-- built files will be auto injected -->
+</body>
 ```
 
 App.vue
