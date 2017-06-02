@@ -13,4 +13,4 @@ cd vuejs-2.0-cli/
 npm install --registry https://registry.npm.taobao.org
 npm run dev
 
-示例代码：vuejs-2.0-cli
+
