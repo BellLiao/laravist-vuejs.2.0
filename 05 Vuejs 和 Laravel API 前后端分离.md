@@ -43,7 +43,6 @@ new Vue({
   template: '<App/>',
   components: { App }
 })
-
 ```
 
 App.vue
