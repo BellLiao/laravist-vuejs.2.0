@@ -39,5 +39,5 @@ Route::get('/todos', function(){
 
 ![](image/screenshot_1496403289289.png)
 
---registry https://registry.npm.taobao.org
+npm install vue-router --registry https://registry.npm.taobao.org
 
