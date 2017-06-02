@@ -15,6 +15,8 @@ Route::get('/todos', function(){
 ```
 浏览器访问测试：http://laravel-package.dev/api/todos
 
+
+
 ![](image/screenshot_1496391677519.png)
 
 vue init webpack vuejs-2.0-cli-api
