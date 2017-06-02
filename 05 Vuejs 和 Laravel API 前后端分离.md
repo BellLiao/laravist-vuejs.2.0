@@ -22,3 +22,4 @@ Route::get('/todos', function(){
 })->middleware('api');
 ```
 浏览器访问测试：http://laravel-package.dev/api/todos
+
