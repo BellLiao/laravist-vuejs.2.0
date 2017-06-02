@@ -13,4 +13,12 @@ cd vuejs-2.0-cli/
 npm install --registry https://registry.npm.taobao.org
 npm run dev
 
+index.html
+```
+<link rel="stylesheet" href="https://cdn.bootcss.com/bootstrap/3.3.7/css/bootstrap.min.css">
+```
 
+App.vue
+```
+
+```
