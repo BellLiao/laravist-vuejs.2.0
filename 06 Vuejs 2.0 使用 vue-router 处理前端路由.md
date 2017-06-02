@@ -134,7 +134,7 @@ App.vue
 </style>
 ```
 
-Todos.vue
+src/compontents/Todos.vue
 ```
 <template>
   <div id="todos">
@@ -179,7 +179,7 @@ Todos.vue
 </style>
 ```
 
-TodoForm.vue
+src/compontents/TodoForm.vue
 ```
 <template>
   <form v-on:submit.prevent="addTodo(newTodo)">
@@ -211,7 +211,7 @@ TodoForm.vue
 </script>
 ```
 
-Todo.vue
+src/compontents/Todo.vue
 ```
 <template>
     <div class="todo">
