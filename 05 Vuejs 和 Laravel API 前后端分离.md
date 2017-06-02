@@ -2,6 +2,20 @@
 
 >https://github.com/imcvampire/vue-axios
 
+新建一个laravel5.3项目 laravel-package
+api.php
+```
+Route::get('/todos', function(){
+    return response()->json([
+        ['id' => 1, 'title' => 'learn Vue js', 'completed' => false],
+        ['id' => 2, 'title' => 'Go to Shop', 'completed' => false],
+    ]);
+})->middleware('api');
+```
+浏览器访问测试：http://laravel-package.dev/api/todos
+
+![](image/screenshot_1496391677519.png)
+
 vue init webpack vuejs-2.0-cli-api
 cd vuejs-2.0-cli-api/
 npm install --registry https://registry.npm.taobao.org
