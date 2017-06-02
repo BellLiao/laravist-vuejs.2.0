@@ -10,17 +10,3 @@ npm run dev
 同上一节，把之前的组件融合到这个项目中
 
 npm install --save axios vue-axios --registry https://registry.npm.taobao.org
-
-新建一个laravel5.3项目 laravel-package
-api.php
-```
-Route::get('/todos', function(){
-    return response()->json([
-        ['id' => 1, 'title' => 'learn Vue js', 'completed' => false],
-        ['id' => 2, 'title' => 'Go to Shop', 'completed' => false],
-    ]);
-})->middleware('api');
-```
-浏览器访问测试：http://laravel-package.dev/api/todos
-
-![](image/screenshot_1496391677519.png)
