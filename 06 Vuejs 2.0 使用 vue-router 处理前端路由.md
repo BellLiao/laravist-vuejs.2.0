@@ -16,6 +16,7 @@ public function up()
 }
 ```
 
+php artisan migrate
 
 
 Todo.php
