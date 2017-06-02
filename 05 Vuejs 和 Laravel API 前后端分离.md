@@ -1,6 +1,7 @@
 #Vuejs 和 Laravel API 前后端分离
 
 >https://github.com/imcvampire/vue-axios
+>https://github.com/barryvdh/laravel-cors
 
 新建一个laravel5.3项目 laravel-package
 api.php
