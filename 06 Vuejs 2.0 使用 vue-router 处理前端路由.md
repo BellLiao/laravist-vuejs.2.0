@@ -18,7 +18,6 @@ public function up()
 
 php artisan migrate
 
-
 Todo.php
 ```
 protected $fillable = ['title'];
