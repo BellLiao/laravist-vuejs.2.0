@@ -74,7 +74,7 @@ new Vue({
 })
 ```
 
-App.vue
+src/App.vue
 ```
 <template>
   <div class="container" id="app">
