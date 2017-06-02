@@ -74,4 +74,63 @@ new Vue({
 })
 ```
 
+App.vue
+```
+<template>
+  <div class="container" id="app">
+    <div class="row">
+      <div class="col-md-8 col-md-offset-2">
+        <div class="panel panel-default">
+          <div class="panel-heading">Welcome Vue js 2.0 Tutorial</div>
+          <div class="panel-body">
+            <img src="./assets/logo.png">
+            <hello></hello>
+            <h1>{{ message }} {{ todoCount }}</h1>
+            <router-view :todos="todos"></router-view>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</template>
 
+<script>
+  import Hello from './components/Hello'
+
+  export default {
+    name: 'app',
+    data(){
+      return {
+        message: 'My Todos',
+        todos: []
+      }
+    },
+    mounted(){
+      this.axios.get('http://laravel-package.dev/api/todos').then(response=>{
+        this.todos = response.data;
+        console.log(response);
+      });
+    },
+    computed: {
+      todoCount(){
+        return this.todos.length;
+      }
+    },
+    components: {
+      Hello
+    }
+  }
+</script>
+
+<style>
+#app {
+  font-family: 'Avenir', Helvetica, Arial, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-align: center;
+  color: #2c3e50;
+  margin-top: 60px;
+}
+</style>
+
+```
