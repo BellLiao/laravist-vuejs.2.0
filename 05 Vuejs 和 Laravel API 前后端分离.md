@@ -68,6 +68,10 @@ composer require barryvdh/laravel-cors
 
 config/app.php
 ```
-
+'providers' => [
+	...
+    Barryvdh\Cors\ServiceProvider::class,
+    ...
+],
 ```
 
