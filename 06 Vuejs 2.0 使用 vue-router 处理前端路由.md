@@ -41,4 +41,37 @@ Route::get('/todos', function(){
 
 npm install vue-router --registry https://registry.npm.taobao.org
 
+main.js
+```
+import Vue from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+import VueRouter from 'vue-router'
+import App from './App'
+import Todos from './components/Todos'
+import Todo from './components/Todo'
+
+Vue.config.productionTip = false
+
+Vue.use(VueAxios, axios)
+Vue.use(VueRouter)
+
+const routes = [
+  { path: '/', component: Todos },
+  { path: '/todo/:id', component: Todo, name: 'todo' }
+]
+
+const router = new VueRouter({
+  routes // short for routes: routes
+})
+
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  template: '<App/>',
+  components: { App },
+  router
+})
+```
+
 
