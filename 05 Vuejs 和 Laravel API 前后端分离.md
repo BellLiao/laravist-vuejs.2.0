@@ -21,4 +21,4 @@ Route::get('/todos', function(){
     ]);
 })->middleware('api');
 ```
-
+浏览器访问测试：
