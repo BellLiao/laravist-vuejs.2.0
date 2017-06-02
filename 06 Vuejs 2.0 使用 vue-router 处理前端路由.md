@@ -23,5 +23,7 @@ Todo.php
 protected $fillable = ['title'];
 ```
 
-
+php artisan tinker
+namespace App
+factory(Todo::class, 20)->create()
 
