@@ -58,7 +58,9 @@ App.vue
   }
 </script>
 ```
+
 接下来就遇到跨域问题
+
 ![](image/screenshot_1496397289826.png)
 
 
