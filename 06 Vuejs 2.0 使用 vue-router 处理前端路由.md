@@ -27,3 +27,5 @@ php artisan tinker
 namespace App
 factory(Todo::class, 20)->create()
 
+
+
