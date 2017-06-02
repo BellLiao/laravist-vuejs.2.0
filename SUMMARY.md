@@ -1,2 +1,3 @@
 * [01 开始使用 Vuejs ：简单的 Todo App](01 开始使用 Vuejs ：简单的 Todo App.md)
 * [02 Vue js computed 和 v-bindclass 的应用场景](02 Vue js computed 和 v-bindclass 的应用场景.md)
+* [03 使用 Vuejs 组件化开发](03 使用 Vuejs 组件化开发.md)
