@@ -26,7 +26,7 @@ npm run dev
 
 npm install --save axios vue-axios --registry https://registry.npm.taobao.org
 
-main.js
+src/main.js
 ```
 import Vue from 'vue'
 import axios from 'axios'
