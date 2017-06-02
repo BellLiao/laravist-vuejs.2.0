@@ -10,3 +10,4 @@ vue init webpack vuejs-2.0-cli
 ![](image/screenshot_1496381549058.png)
 
 cd vuejs-2.0-cli/
+npm install --registry https://registry.npm.taobao.org
