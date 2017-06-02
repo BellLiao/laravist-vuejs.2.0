@@ -16,3 +16,7 @@ public function up()
 }
 ```
 
+Todo.php
+```
+protected $fillable = ['title'];
+```
