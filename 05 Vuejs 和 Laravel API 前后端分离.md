@@ -64,5 +64,6 @@ App.vue
 ![](image/screenshot_1496397289826.png)
 
 cd laravel-package/
-
+composer require barryvdh/laravel-cors
+config/app.php
 
