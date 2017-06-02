@@ -13,7 +13,7 @@ cd vuejs-2.0-cli/
 npm install --registry https://registry.npm.taobao.org
 npm run dev
 
-把之前的组件整合到这个项目中
+把之前的组件融合到这个项目中
 
 index.html
 ```
