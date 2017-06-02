@@ -25,3 +25,5 @@ npm run dev
 同上一节，把之前的组件融合到这个项目中
 
 npm install --save axios vue-axios --registry https://registry.npm.taobao.org
+
+
