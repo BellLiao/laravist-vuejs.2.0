@@ -33,7 +33,7 @@ index.html
 </body>
 ```
 
-App.vue
+src/App.vue
 ```
 <template>
     <div class="container" id="app">
@@ -81,7 +81,7 @@ App.vue
 </script>
 ```
 
-Todos.vue
+src/components/Todos.vue
 ```
 <template>
     <ul class="list-group">
