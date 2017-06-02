@@ -35,6 +35,11 @@ Route::get('/todos', function(){
     $todos = \App\Todo::all();
     return $todos;
 })->middleware('cors:api');
+
+Route::get('/todo/{id}', function($id){
+    $todo = \App\Todo::find($id);
+    return $todo;
+})->middleware('cors:api');
 ```
 
 ![](image/screenshot_1496403289289.png)
