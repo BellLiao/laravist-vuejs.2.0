@@ -45,7 +45,7 @@ new Vue({
 })
 ```
 
-App.vue
+src/App.vue
 ```
 <script>
   import Hello from './components/Hello'
