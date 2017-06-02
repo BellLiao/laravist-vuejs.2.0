@@ -118,7 +118,7 @@ src/components/Todos.vue
 </style>	
 ```
 
-TodoForm.vue
+src/components/TodoForm.vue
 ```
 <template>
     <form v-on:submit.prevent="addTodo(newTodo)">
