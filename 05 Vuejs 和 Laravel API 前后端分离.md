@@ -26,5 +26,36 @@ npm run dev
 
 npm install --save axios vue-axios --registry https://registry.npm.taobao.org
 
+App.vue
+```
+<script>
+  import Hello from './components/Hello'
+  import Todos from './components/Todos'
+  import TodoForm from './components/TodoForm'
 
+  export default {
+    name: 'app',
+    data(){
+      return {
+        message: 'My Todos',
+        todos: []
+      }
+    },
+    mounted(){
+      this.axios.get('http://laravel-package.dev/api/todos').then(response=>{
+        this.todos = response.data;
+        console.log(response);
+      });
+    },
+    computed: {
+      todoCount(){
+        return this.todos.length;
+      }
+    },
+    components: {
+      Hello, Todos, TodoForm
+    }
+  }
+</script>
+```
 
