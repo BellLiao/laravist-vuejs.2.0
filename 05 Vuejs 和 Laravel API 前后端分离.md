@@ -7,6 +7,7 @@ cd vuejs-2.0-cli-api/
 npm install --registry https://registry.npm.taobao.org
 npm run dev
 
+同上一节，将之前的组合
 
 npm install --save axios vue-axios --registry https://registry.npm.taobao.org
 
