@@ -41,3 +41,4 @@ Route::get('/todos', function(){
 
 npm install vue-router --registry https://registry.npm.taobao.org
 
+
