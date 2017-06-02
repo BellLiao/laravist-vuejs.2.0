@@ -26,6 +26,26 @@ npm run dev
 
 npm install --save axios vue-axios --registry https://registry.npm.taobao.org
 
+main.js
+```
+import Vue from 'vue'
+import axios from 'axios'
+import VueAxios from 'vue-axios'
+import App from './App'
+
+Vue.config.productionTip = false
+
+Vue.use(VueAxios, axios)
+
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  template: '<App/>',
+  components: { App }
+})
+
+```
+
 App.vue
 ```
 <script>
