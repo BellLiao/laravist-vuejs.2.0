@@ -65,6 +65,7 @@ App.vue
 
 cd laravel-package/
 composer require barryvdh/laravel-cors
+php artisan vendor:publish --provider="Barryvdh\Cors\ServiceProvider"
 
 config/app.php
 ```
