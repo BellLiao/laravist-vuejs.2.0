@@ -12,3 +12,4 @@ npm run dev
 npm install --save axios vue-axios --registry https://registry.npm.taobao.org
 
 新建一个laravel5.3项目 laravel-package
+
