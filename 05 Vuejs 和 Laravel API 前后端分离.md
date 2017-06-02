@@ -83,3 +83,13 @@ protected $routeMiddleware = [
 ];
 ```
 
+api.php
+```
+Route::get('/todos', function(){
+    return response()->json([
+        ['id' => 1, 'title' => 'learn Vue js', 'completed' => false],
+        ['id' => 2, 'title' => 'Go to Shop', 'completed' => false],
+    ]);
+})->middleware('cors:api');
+```
+
