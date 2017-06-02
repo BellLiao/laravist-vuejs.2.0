@@ -179,4 +179,86 @@ Todos.vue
 </style>
 ```
 
+TodoForm.vue
+```
+<template>
+  <form v-on:submit.prevent="addTodo(newTodo)">
+    <div class="form-group">
+      <input type="text" class="form-control" placeholder="Add a new todo"
+             v-model="newTodo.title">
+    </div>
+    <div class="form-group">
+      <button class="btn btn-success" type="submit">Add Todo</button>
+    </div>
+  </form>
+</template>
 
+<script>
+  export default {
+    props: ['todos'],
+    data(){
+      return {
+        newTodo: {id: null, title: '', completed: false}
+      }
+    },
+    methods: {
+      addTodo(newTodo){
+        this.todos.push(newTodo);
+        this.newTodo = {id: null, title: '', completed: false};
+      }
+    }
+  }
+</script>
+```
+
+Todo.vue
+```
+<template>
+    <div class="todo">
+        <div class="loading" v-if="loading">
+            Loading...
+        </div>
+
+        <div v-if="error" class="error">
+            {{ error }}
+        </div>
+
+        <div v-if="todo" class="content">
+            <h2>{{ todo.title }}</h2>
+        </div>
+    </div>
+</template>
+
+<script>
+    export default {
+        data () {
+            return {
+                loading: false,
+                todo: null,
+                error: null
+            }
+        },
+        created () {
+            // fetch the data when the view is created and the data is
+            // already being observed
+            this.fetchData()
+        },
+        watch: {
+            // call again the method if the route changes
+            '$route': 'fetchData'
+        },
+        methods: {
+            fetchData () {
+                this.error = this.todo = null
+                this.loading = true
+                // replace getPost with your data fetching util / API wrapper
+                this.axios.get('http://laravel-package.dev/api/todo/' + this.$route.params.id).then(response=>{
+                    console.log(response.data);
+                    this.loading = false;
+                    this.todo = response.data;
+                });
+            }
+        }
+    }
+</script>
+```
