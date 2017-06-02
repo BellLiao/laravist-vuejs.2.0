@@ -27,5 +27,11 @@ php artisan tinker
 namespace App
 factory(Todo::class, 20)->create()
 
-
+api.php
+```
+Route::get('/todos', function(){
+    $todos = \App\Todo::all();
+    return $todos;
+})->middleware('cors:api');
+```
 
