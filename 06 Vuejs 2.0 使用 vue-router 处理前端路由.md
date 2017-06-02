@@ -3,3 +3,15 @@
 cd laravel-package/
 php artisan make:model Todo -m
 
+2017_06_02_110139_create_todos_table.php
+```
+public function up()
+{
+    Schema::create('todos', function (Blueprint $table) {
+        $table->increments('id');
+        $table->string('title');
+        $table->tinyInteger('completed')->default(0);
+        $table->timestamps();
+    });
+}
+```
