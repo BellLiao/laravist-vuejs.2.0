@@ -58,6 +58,6 @@ App.vue
   }
 </script>
 ```
-
+![](image/screenshot_1496397289826.png)
 
 
