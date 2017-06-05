@@ -4,3 +4,4 @@
 * [04 使用 Vue 脚手架工具进行组件化开发](04 使用 Vue 脚手架工具进行组件化开发.md)
 * [05 Vuejs 和 Laravel API 前后端分离](05 Vuejs 和 Laravel API 前后端分离.md)
 * [06 Vuejs 2.0 使用 vue-router 处理前端路由](06 Vuejs 2.0 使用 vue-router 处理前端路由.md)
+* [07 Vuejs 2.0 教程：与后端 API 进行交互](07 Vuejs 2.0 教程：与后端 API 进行交互.md)
